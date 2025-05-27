@@ -3,6 +3,26 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* BLUE */
+  --deep-blue: #1a275e;
+  --deep-navy: #0a1e3a;
+  --navy: #0f3759;
+  --blue: #125c89;
+  --mid-blue: #669bb3;
+  --light-blue: #b2ccdd;
+
+  /* ORANGE */
+  --light-orange: #f6c200;
+  --orange: #f79c00;
+  --mid-orange: #f77c00;
+  --deep-orange: #f75300;
+  --red: #f60000;
+
+  /* FONTS */
+  --font-lato: "Lato", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-great-vibes: "Great Vibes", cursive;
 }
 
 @theme inline {
@@ -10,6 +30,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Screen Sizes */
+  --breakpoint-3xl: 120rem;
+
+  /* BG opacity */
+  --black-50: rgba(0, 0, 0, 0.5)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +48,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif, var(--font-lato),
+    var(--font-montserrat), var(--font-great-vibes);
 }
