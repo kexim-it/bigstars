@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${lato.variable} antialiased`}
+        className={`${lato.variable} antialiased overflow-x-hidden`}
       >
         <Navbar />
         {children}

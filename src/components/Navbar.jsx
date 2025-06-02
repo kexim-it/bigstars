@@ -12,7 +12,7 @@ import Sustainability from "./nav/Sustainability";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between px-10 mx-auto font-[] relative">
+    <nav className="flex items-center justify-between px-10 mx-auto font-[] relative w-screen ">
       <Link href={"/"}>
         <Image
           src={Logo}

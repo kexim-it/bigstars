@@ -12,7 +12,7 @@ const VideoCard = () => {
       </div>
       <div className="relative">
         <div className="">
-          <BigStarsVideo />
+          {/* <BigStarsVideo /> */}
         </div>
       </div>
     </div>

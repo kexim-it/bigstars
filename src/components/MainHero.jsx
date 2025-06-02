@@ -6,7 +6,7 @@ import FeedFactory from "@/app/assets/images/ai/feed-factory.png"
 
 const MainHero = () => {
   return (
-    <div className=" relative group overflow-x-hidden h-[90vh]">
+    <div className=" relative group h-[90vh] w-screen">
       {/* <video
         width={2048}
         height={2048}

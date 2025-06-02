@@ -3,6 +3,10 @@ import { GiCorn } from "react-icons/gi";
 import DummyImage0 from "@/app/assets/images/ai/dummy-farmer.jpeg"
 import DummyImage2 from "@/app/assets/images/ai/dummy-farmer-2.png"
 import DummyImage1 from "@/app/assets/images/ai/dummy-farmer-1.jpeg"
+import Akloyo from "@/app/assets/images/staff/gm.jpg"
+import Bernice from "@/app/assets/images/staff/bernice.png"
+import Hoffman from "@/app/assets/images/staff/hoffman.jpeg"
+import Mac from "@/app/assets/images/staff/mac.jpeg"
 
 export const MainServiceData = [
   // {
@@ -207,3 +211,191 @@ export const footerLinks = [
     links: ["Contact information", "Press & Media", "Countries"]
   }
 ];
+
+export const strategyData = {
+  "company": "Big Stars Animal Feed Limited",
+  "businessStrategy": {
+    "overview": "Deliver high-quality, sustainable animal nutrition solutions while expanding market presence across Ghana and West Africa.",
+    "strategicPillars": [
+      {
+        "title": "Innovative and Sustainable Nutrition",
+        "description": "Scientifically formulated feeds using energy-efficient machinery to reduce waste and conserve resources."
+      },
+      {
+        "title": "Local Sourcing and In-House Processing",
+        "description": "Utilizes locally grown, non-GMO ingredients and processes soybeans in-house to ensure quality and reduce carbon footprint."
+      },
+      {
+        "title": "Nationwide Distribution Network",
+        "description": "Operates across all 16 regions of Ghana with distributors, depots, and direct farm gate access to ensure wide availability."
+      },
+      {
+        "title": "Product Diversification",
+        "description": "Expanded into agro-seeds with the Kings Seeds brand, offering certified seeds for maize, rice, and soybeans to support sustainable agriculture."
+      },
+      {
+        "title": "Quality Assurance and Certifications",
+        "description": "Certified by Ghana Standards Authority, FDA, and MOFA to ensure the highest safety and quality standards."
+      },
+      {
+        "title": "Community Engagement and Development",
+        "description": "Participates in national programs like 1D1F and invests in rural job creation through feed processing plants."
+      }
+    ],
+    "strategicGoals": [
+      "Achieve market leadership in animal nutrition across Ghana and West Africa",
+      "Implement and maintain environmentally friendly production practices",
+      "Ensure customer satisfaction through product quality and availability",
+      "Support farmers with high-quality feed and seed inputs for better yields"
+    ]
+  }
+}
+
+// Company Profile Data
+export const companyProfileData = {
+  "companyName": "Big Stars Animal Feed Limited",
+  "founded": "2017",
+  "headquarters": {
+    "address": "P.O. Box CS 9379, IND A 12/19, Heavy Industrial Area, Community 7, Tema, Ghana",
+    "digitalAddress": "GT-037-4578"
+  },
+  "contact": {
+    "phoneNumbers": [
+      "+233 540 112 106",
+      "+233 594 015 286",
+      "+233 593 866 591",
+      "+233 248 739 769"
+    ],
+    "website": "https://www.bigstars.ltd"
+  },
+  "mission": "To support the health and well-being of animals by offering innovative and scientifically formulated feed solutions, fostering a better animal production community in Ghana and across West Africa.",
+  "vision": "To be a leading provider of innovative and sustainable animal nutrition solutions, contributing to the prosperity of the agricultural sector and the communities it serves.",
+  "coreOperations": {
+    "feedMill": "12-metric-tonne-per-hour capacity located in Tema, equipped with energy-efficient machinery.",
+    "productRange": {
+      "mashes": [
+        {
+          title:"Chick Pre-Starter Mash",
+          img:""
+        },
+        {
+          title:"Chick Mash",
+          img:""
+        },
+        {
+          title:"Grower Mash",
+          img:""
+        },
+        {
+          title:"Layer Mashes",
+          img:""
+        },
+        {
+          title:"Broiler Starter and Finisher Mashes",
+          img:""
+        },
+        {
+          title:"Guinea Fowl Starter and Finisher",
+          img:""
+        },
+        {
+          title:"Pig Feeds",
+          img:""
+        },
+        {
+          title:"Rabbit Feed",
+          img:""
+        },        
+      ],
+      "concentrates": [
+        "Layer Concentrate",
+        "Broiler Concentrate",
+        "Pig Concentrate"
+      ],
+      "soybeanMeal": "Non-GMO, locally processed soybean meal.",
+      "kingsSeeds": "Certified seeds for maize, rice, and soybeans."
+    }
+  },
+  "sustainability": {
+    "practices": [
+      "Energy-efficient production to reduce waste and conserve resources.",
+      "Local sourcing of non-GMO ingredients.",
+      "In-house processing of soybeans for quality control and carbon footprint reduction.",
+      "Fair trade partnerships with local farmers.",
+      "Engagement in job creation and rural development initiatives."
+    ],
+    "certifications": [
+      "Ghana Standards Authority (GSA)",
+      "Food and Drugs Authority (FDA)",
+      "Ministry of Food and Agriculture (MOFA)"
+    ]
+  },
+  "distribution": {
+    "reach": "Present in all 16 regions of Ghana",
+    "channels": [
+      "Distributors",
+      "Sales depots",
+      "Direct farm gate access"
+    ]
+  },
+  "partnerships": {
+    "government": "Participates in Ghana’s One District One Factory initiative with a feed processing plant in Tuobodom, Bono East Region.",
+    "brands": [
+      {
+        "name": "Kings Seeds",
+        "focus": "Certified seeds for sustainable agriculture",
+        "partner": "Fieldnest Agritech, India-Hyderabad"
+      }
+    ]
+  },
+  "leadership": [
+    {
+      "name": "Charles T.M. Blaboe",
+      "position": "General Manager"
+    },
+    {
+      "name": "Illyass Yussif",
+      "position": "Sales and Marketing Manager"
+    },
+    {
+      "name": "Hoffman Azu",
+      "position": "Production Manager"
+    },
+    {
+      "name": "Mac-Wilson Teye Boti",
+      "position": "Plant Engineer/Warehouse Manager"
+    },
+    {
+      "name": "Samuel Ankomah Bamfo",
+      "position": "Tally Officer"
+    }
+  ]
+}
+
+// Team Data
+export const teamData = [
+  {
+    "name": "Micheal Akloyo",
+    "position": "General Manager",
+    "description": "Oversees the company's strategic direction and business development, ensuring operational excellence and market growth.",
+    "image": Akloyo
+  },
+  {
+    "name": "Bernice Afiazu",
+    "position": "Sales Manager",
+    "description": "Leads sales strategy, customer engagement, and market expansion",
+    "image": Bernice
+  },
+  {
+    "name": "Hoffman Azu",
+    "position": "Production Manager",
+    "description": "Leads the feed production processes and enforces rigorous quality control standards to maintain product excellence.",
+    "image": Hoffman
+  },
+  {
+    "name": "Mac-Wilson Teye Boti",
+    "position": "Plant Engineer / Warehouse Manager",
+    "description": "Manages engineering operations and warehouse logistics to support efficient supply chain and storage systems.",
+    "image": Mac
+  }
+]

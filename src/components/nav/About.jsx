@@ -10,10 +10,10 @@ const About = () => {
     const [aboutdropdownMenu, setAboutDropdownMenu] = useState(false);
     const [activeTab, setActiveTab] = useState("Who We Are");
       //About US 
-      const tabs = ["Future Of Animal Feed", "Who We Are", "Management"];
+      const tabs = ["Who We Are", "Management"];
     
       const tabContent = {
-        "Future Of Animal Feed": {
+        "Who We Are": {
           title: "Company profile",
           body: "Learn more about our mission, vision, and strategy as a company.",
           image: MainImage,
@@ -25,34 +25,38 @@ const About = () => {
             },
             {
               title: "Strategy",
-              url: "/about-us/stategy",
+              url: "/about-us/strategy",
             },
-          ],
-        },
-        "Who We Are": {
-          title: "Who We Are",
-          body: "Explore key statistics and operational figures for our business.",
-          image: MainImage,
-          imageText: "",
-          links: [
             {
               title: "Company Profile",
               url: "/about-us/company-profile",
             },
-            {
-              title: "Our Business",
-              url: "/about-us/our-business",
-            },
-            {
-              title: "Our Story",
-              url: "/about-us/our-story",
-            },
           ],
         },
+        // "Who We Are": {
+        //   title: "Who We Are",
+        //   body: "Explore key statistics and operational figures for our business.",
+        //   image: MainImage,
+        //   imageText: "",
+        //   links: [
+        //     {
+        //       title: "Company Profile",
+        //       url: "/about-us/company-profile",
+        //     },
+        //     {
+        //       title: "Our Business",
+        //       url: "/about-us/our-business",
+        //     },
+        //     {
+        //       title: "Our Story",
+        //       url: "/about-us/our-story",
+        //     },
+        //   ],
+        // },
         Management: {
           title: "Management",
-          body: "Click on the link below for the latest stock prices",
-          linkText: "Share price",
+          body: "Get to know the leadership team and their roles in our company.",
+          linkText: "Meet the Team",
           image: MainImage,
           imageText: "",
           links: [
@@ -60,10 +64,10 @@ const About = () => {
               title: "Management Board & Executive Team",
               url: "/about-us/management-board",
             },
-            {
-              title: "Supervisory Board",
-              url: "/about-us/supervisory-board",
-            },
+            // {
+            //   title: "Supervisory Board",
+            //   url: "/about-us/supervisory-board",
+            // },
             {
               title: "Team Members",
               url: "/about-us/team-members",

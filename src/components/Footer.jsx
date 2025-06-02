@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--blue)] border-t-8 border-t-[var(--orange)] text-white py-10 px-6">
+    <footer className="bg-[var(--blue)] border-t-8 border-t-[var(--orange)] text-white py-10 px-6 w-screen">
       <div className="max-w-[80vw] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8  pb-10">
         {footerLinks.map((section, index) => (
           <div key={index}>
