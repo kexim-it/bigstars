@@ -4,6 +4,7 @@ import CTA from '@/components/CTA'
 import MainAbout from '@/components/MainAbout'
 import PageHero from '@/components/PageHero'
 import React from 'react'
+import FeedImage from "@/app/assets/images/poultry/feed-9.avif"
 
 const page = () => {
   return (
