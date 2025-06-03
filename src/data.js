@@ -1,5 +1,5 @@
-import { FaHeartbeat, FaLayerGroup, FaLeaf, FaPiggyBank, FaSeedling } from "react-icons/fa";
-import { GiCorn } from "react-icons/gi";
+import { FaBalanceScale, FaBox, FaDrumstickBite, FaEgg, FaFeather, FaHeartbeat, FaLayerGroup, FaLeaf, FaPiggyBank, FaSeedling, FaWarehouse } from "react-icons/fa";
+import { GiBigEgg, GiBirdTwitter, GiBroccoli, GiChicken, GiChickenLeg, GiChickenOven, GiCorn, GiEggClutch, GiMeal, GiMeat, GiMuscleUp, GiPig, GiPigFace, GiRoastChicken, GiSteak, GiWeightLiftingUp, GiWheat } from "react-icons/gi";
 import DummyImage0 from "@/app/assets/images/ai/dummy-farmer.jpeg"
 import DummyImage2 from "@/app/assets/images/ai/dummy-farmer-2.png"
 import DummyImage1 from "@/app/assets/images/ai/dummy-farmer-1.jpeg"
@@ -7,6 +7,23 @@ import Akloyo from "@/app/assets/images/staff/gm.jpg"
 import Bernice from "@/app/assets/images/staff/bernice.png"
 import Hoffman from "@/app/assets/images/staff/hoffman.jpeg"
 import Mac from "@/app/assets/images/staff/mac.jpeg"
+
+// Poultry Image
+import PoultryImage1 from "@/app/assets/images/poultry/poultry.png"
+import PoultryImage2 from "@/app/assets/images/poultry/poultry-1.jpg"
+import PoultryImage3 from "@/app/assets/images/poultry/poultry-2.jpg"
+import PoultryImage4 from "@/app/assets/images/poultry/poultry-8.jpg"
+import PoultryImage5 from "@/app/assets/images/poultry/poultry-4.jpg"
+import PoultryImage6 from "@/app/assets/images/poultry/poultry-5.jpg"
+
+// Swine Image
+import SwineImage1 from "@/app/assets/images/swine/pig-1.avif"
+import SwineImage2 from "@/app/assets/images/swine/pig-2.jpg"
+import SwineImage3 from "@/app/assets/images/swine/pig-3.jpg"
+import SwineImage4 from "@/app/assets/images/swine/pig-4.avif"
+import SwineImage5 from "@/app/assets/images/swine/pig-4.jpg"
+import SwineImage6 from "@/app/assets/images/swine/pig-5.avif"
+
 
 export const MainServiceData = [
   // {
@@ -399,3 +416,217 @@ export const teamData = [
     "image": Mac
   }
 ]
+
+// Poultry Feed Data
+export const poultryFeedData = {
+  "services": {
+    "description": "Big Stars Animal Feed provides high-quality poultry feed and concentrates formulated for different stages of poultry development. Their services support improved productivity, nutritional health, and farmer profitability across Ghana and West Africa.",
+    "feed_products": [
+      {
+        "name": "Chick Pre-Starter Mash",
+        "description": "A specially formulated mash for day-old chicks (1–7 days), providing vital nutrients for a healthy start.",
+        "icon": <GiBigEgg />
+      },
+      {
+        "name": "Chick Mash",
+        "description": "Balanced feed for chicks aged 2–8 weeks, supporting strong growth and development during the early brooding phase.",
+        "icon": <GiChicken />
+      },
+      {
+        "name": "Grower Mash",
+        "description": "Designed for pullets aged 9–18 weeks to build healthy body mass before laying begins.",
+        "icon": <GiBroccoli />
+      },
+      {
+        "name": "Layer Plus",
+        "description": "High-energy feed for early laying hens (19–29 weeks) to boost egg production onset.",
+        "icon": <GiEggClutch />
+      },
+      {
+        "name": "Layer Mash 1",
+        "description": "Complete feed for layers in mid-production (30–50 weeks), formulated to maximize egg output and shell strength.",
+        "icon": <FaBalanceScale />
+      },
+      {
+        "name": "Layer Mash 2",
+        "description": "Optimized for late-stage layers (50 weeks+), sustaining consistent egg quality and hen health.",
+        "icon": <FaBox />
+      },
+      {
+        "name": "Broiler Starter Mash",
+        "description": "Nutrient-dense feed to promote rapid growth and muscle development in broilers during the first weeks.",
+        "icon": <GiChickenOven />
+      },
+      {
+        "name": "Broiler Finisher Mash",
+        "description": "Supports weight gain and meat quality in broilers nearing market age.",
+        "icon": <GiMeat />
+      },
+      {
+        "name": "Guinea Fowl Starter",
+        "description": "Special feed for young guinea fowl to support healthy early development and immune function.",
+        "icon": <GiBirdTwitter />
+      },
+      {
+        "name": "Guinea Fowl Finisher",
+        "description": "Finishing feed tailored for mature guinea fowls to enhance growth and meat yield.",
+        "icon": <GiRoastChicken />
+      }
+    ],
+    "concentrates": [
+      {
+        "name": "50% Chick Concentrate",
+        "description": "High-protein supplement for mixing chick starter feed formulations.",
+        "icon": <GiChickenLeg />
+      },
+      {
+        "name": "50% Grower Concentrate",
+        "description": "Designed to mix balanced grower feed for developing birds.",
+        "icon": <GiWheat />
+      },
+      {
+        "name": "5% Layer Concentrate",
+        "description": "Highly efficient formula for egg-laying birds to be mixed with farm-based grains.",
+        "icon": <FaEgg  />
+      },
+      {
+        "name": "20% Layer Concentrate",
+        "description": "Provides essential minerals and nutrients to support layers in mid-production.",
+        "icon": <FaDrumstickBite />
+      },
+      {
+        "name": "25% Layer Concentrate",
+        "description": "Customized for enhanced feed efficiency in high-performance laying hens.",
+        "icon": <FaFeather />
+      },
+      {
+        "name": "50% Layer Concentrate",
+        "description": "A balanced formulation for flexibility in home feed mixing for laying birds.",
+        "icon": <FaWarehouse />
+      },
+      {
+        "name": "5% Broiler Concentrate",
+        "description": "Minimal inclusion formula to improve cost-efficiency and broiler growth.",
+        "icon": <GiWeightLiftingUp />
+      },
+      {
+        "name": "30% Broiler Concentrate",
+        "description": "Balanced nutrition source to formulate energy-dense broiler feed.",
+        "icon": <GiSteak />
+      },
+      {
+        "name": "35% Broiler Concentrate",
+        "description": "Rich in protein and minerals for building quality broiler muscle mass.",
+        "icon": <GiMuscleUp />
+      },
+      {
+        "name": "50% Broiler Concentrate",
+        "description": "Highly concentrated base to mix your own complete broiler feed at farm level.",
+        "icon": <GiMeal />
+      }
+    ]
+  }
+}
+
+// Poultry Image Data
+export const poultryImageData = [
+  {
+    "id": 1,
+    "src": PoultryImage1,
+    "alt": "50kg bag of Egg Layer Concentrate from Big Stars Animal Feed"
+  },
+  {
+    "id": 2,
+    "src": PoultryImage2,
+    "alt": "Big Stars Broiler Grower Feed package stacked in warehouse"
+  },
+  {
+    "id": 3,
+    "src": PoultryImage3,
+    "alt": "Healthy poultry birds fed with Big Stars feed"
+  },
+  {
+    "id": 4,
+    "src": PoultryImage4,
+    "alt": "Animal feed production process at Big Stars facility"
+  },
+  {
+    "id": 5,
+    "src": PoultryImage5,
+    "alt": "Farmer holding Big Stars feed with poultry in background"
+  },
+  {
+    "id": 5,
+    "src": PoultryImage6,
+    "alt": "Farmer holding Big Stars feed with poultry in background"
+  },
+]
+// Swine Image Data
+export const swineImageData = [
+  {
+    "id": 1,
+    "src": SwineImage1,
+    "alt": "50kg bag of Egg Layer Concentrate from Big Stars Animal Feed"
+  },
+  {
+    "id": 2,
+    "src": SwineImage2,
+    "alt": "Piglets feeding from a sow in a clean pigsty"
+  },
+  {
+    "id": 3,
+    "src": SwineImage3,
+    "alt": "Lactating sow lying down with a litter of piglets"
+  },
+  {
+    "id": 4,
+    "src": SwineImage4,
+    "alt": "A well-maintained swine farm using Big Stars Animal Feed"
+  },
+  {
+    "id": 5,
+    "src": SwineImage5,
+    "alt": "Piglets feeding from a sow in a clean pigsty"
+  },
+  {
+    "id": 5,
+    "src": SwineImage6,
+    "alt": "Piglets feeding from a sow in a clean pigsty"
+  },
+]
+
+// Swine Feed Data
+export const swineFeedData = {
+  "category": "Pig Feed",
+  "company": "Big Stars Animal Feed",
+  "description": "Big Stars Animal Feed offers a range of specialized pig feeds tailored to meet the nutritional needs of pigs at various stages of growth and reproduction. These feeds are designed to support optimal health, growth, and productivity in swine.",
+  "products": [
+    {
+      "name": "Pig Weaner/Lactating Sow Feed",
+      "description": "Formulated to support the nutritional requirements of piglets during weaning and lactating sows, ensuring healthy development and milk production.",
+      "icon": <FaPiggyBank />
+    },
+    {
+      "name": "Pig Finisher Feed",
+      "description": "Designed to promote rapid weight gain and efficient feed conversion in pigs approaching market weight.",
+      "icon": <GiPigFace />
+    },
+    {
+      "name": "Pig Breeder Feed",
+      "description": "Tailored to meet the needs of breeding pigs, enhancing reproductive performance and overall health.",
+      "icon": <GiPig />
+    }
+  ],
+  "contact": {
+    "website": "https://www.bigstars.ltd",
+    "email": "admin@bigstars.ltd",
+    "phone": [
+      "+233 593 866 591",
+      "+233 540 109 002",
+      "+233 540 109 001"
+    ],
+    "address": "P.O. Box CS 9379, IND A 12/19, Heavy Industrial Area, Community 7, Tema, Ghana"
+  },
+  "distribution": "Available in all 16 regions of Ghana through sales depots and agents.",
+  "source": "https://www.bigstars.ltd"
+}

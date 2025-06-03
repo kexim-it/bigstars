@@ -23,17 +23,23 @@ const Navbar = () => {
         />
       </Link>
       <ul className="flex items-center gap-5">
+        <Link href={"/"}>
+        <li className="hover:text-[var(--orange)] duration-300 ease-in-out text-[var(--blue)]">
+            Home
+          </li>
+        </Link>
         {/* ABOUT BIGSTARS */}
         <About />
         {/* ANIMAL FEED */}
         <AnimalNutrition />
-        <Sustainability />
-        <Link href={"/visit-shop"}>
+        {/* <Sustainability /> */}
+        <Link href={"/kings-seeds"}>
           {" "}
           <li className="hover:text-[var(--orange)] duration-300 ease-in-out text-[var(--blue)]">
-            Visit Shop
+            Kings Seeds
           </li>
         </Link>
+
         <Link href={"/contact-us"}>
           {" "}
           <li className="hover:text-[var(--orange)] duration-300 ease-in-out text-[var(--blue)]">

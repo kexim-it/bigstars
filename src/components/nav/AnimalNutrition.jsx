@@ -34,14 +34,14 @@ const AnimalNutrition = () => {
       image: MainImage,
       imageText: "",
       links: [
-        {
-          title: "Poultry Feed",
-          url: "/feed-type/poultry-feed",
-        },
-        {
-          title: "Swine Feed",
-          url: "/feed-type/swine-feed",
-        },
+        // {
+        //   title: "Poultry Feed",
+        //   url: "/feed-type/poultry-feed",
+        // },
+        // {
+        //   title: "Swine Feed",
+        //   url: "/feed-type/swine-feed",
+        // },
         {
           title: "Concentrates",
           url: "/feed-type/concentrates",
