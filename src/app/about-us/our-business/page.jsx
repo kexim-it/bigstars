@@ -1,3 +1,8 @@
+import CoreOperations from '@/components/about/CoreOperations'
+import FirstSection from '@/components/about/FirstSection'
+import CTA from '@/components/CTA'
+import MainAbout from '@/components/MainAbout'
+import PageHero from '@/components/PageHero'
 import React from 'react'
 
 const page = () => {
