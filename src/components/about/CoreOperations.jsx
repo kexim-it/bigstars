@@ -1,51 +1,61 @@
 "use client";
+
 import { companyProfileData } from "@/data";
 import Image from "next/image";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+// Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import MashImage from "@/app/assets/images/products/mashes.jpg";
 
-// import required modules
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+// Swiper modules
+import {Autoplay } from "swiper/modules";
 
 const CoreOperations = () => {
   const coreOps = companyProfileData.coreOperations;
 
   return (
-    <div className="max-w-[80vw] mx-auto my-10 flex">
-      <div className="w-1/2 bg-slate-100 p-4">
-        <h2 className="text-3xl font-semibold text-[var(--orange)]">
+    <section
+      className="max-w-7xl mx-auto my-12 px-4 flex flex-col md:flex-row gap-6"
+      aria-label="Core operations - Feed Mill and Product Range"
+    >
+      {/* Feed Mill Section */}
+      <div className="md:w-1/2 w-full bg-slate-100 p-6 rounded-lg shadow-md">
+        <h2 className="text-3xl font-semibold text-[var(--orange)] mb-4">
           Feed Mill
         </h2>
-        <p className="">{coreOps.feedMill}</p>
+        <p className="text-gray-700 leading-relaxed">{coreOps.feedMill}</p>
       </div>
-      <div className="w-1/2 bg-[var(--blue)]">
+
+      {/* Swiper Section */}
+      <div className="md:w-1/2 w-full bg-[var(--blue)] rounded-lg overflow-hidden">
         <Swiper
           slidesPerView={1}
-          spaceBetween={30}
+          spaceBetween={20}
           loop={true}
-          autoplay={true}
+          autoplay={{ delay: 3000 }}
+          
           modules={[Autoplay]}
-          className="mySwiper max-w-[100vw]"
+          className="w-full h-full"
         >
-          {coreOps.productRange.mashes.map((product, key) => (
-            <SwiperSlide className="" key={key}>
-              <div className="flex items-center justify-between">
-                <div className="px-10">
-                  <h3 className="text-white text-2xl">{product.title}</h3>
+          {coreOps.productRange.mashes.map((product, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-6">
+                <div className="text-white">
+                  <h3 className="text-2xl font-semibold">{product.title}</h3>
                 </div>
-                <div className="w-72 h-32 overflow-hidden">
+                <div className="w-full sm:w-72 h-32 overflow-hidden rounded-md">
                   <Image
                     src={MashImage}
-                    alt="Product Range"
+                    alt={`Product image: ${product.title}`}
                     width={1080}
                     height={1080}
                     className="w-full h-full object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
                   />
                 </div>
               </div>
@@ -53,7 +63,7 @@ const CoreOperations = () => {
           ))}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -5,27 +5,58 @@ import Link from "next/link";
 
 const KingsSeedMain = () => {
   return (
-    <div className="flex items-center max-w-[80vw] 3xl:max-w-[70vw] mx-auto">
-      <div className="w-[50rem] 3xl:w-[60rem] h-[35rem] rounded-2xl">
-        <Image
-          src={Maize}
-          alt="Kings-seed-image"
-          width={1080}
-          height={1080}
-          className="w-full h-full object-cover rounded-2xl"
-        />
-      </div>
-      <div className="relative">
-        <div className="w-[40rem] rounded-2xl h-96 bg-[var(--deep-blue)] p-10 absolute -left-52 -top-10 border-b-[var(--orange)] border-b-[10px]">
-            <h3 className="text-white text-lg capitalize font-semibold mt-10">
-                <span className="text-[var(--orange)] text-4xl">Kings Seeds</span><br/> provides the most quality seeds </h3>
-            <p className="mt-4 mb-10 text-justify text-white">
-                Kings Seeds is the seed division of Big Stars Animal Feed, delivering high-quality, certified hybrid maize and legume seeds tailored for Ghanaian farmers. With a focus on yield, resilience, and sustainability, Kings Seeds empowers agriculture with trusted varieties like Supreme and Teemeer 02 Hybrid Maize.
-            </p>
-            <Link href={"/kingseeds"} className="text-white bg-[var(--orange)] py-3 px-10 rounded-lg hover:bg-[var(--deep-orange)] duration-300 ease-in-out">Know More</Link>
+    <section
+      aria-labelledby="kings-seed-heading"
+      className="flex justify-center items-center py-16 px-4"
+    >
+      <div className="relative w-full max-w-[1200px] flex flex-col md:flex-row items-center md:items-start gap-10">
+        {/* Image: Left Side */}
+        <div className="w-full md:w-[45%] h-[20rem] md:h-[35rem] rounded-2xl overflow-hidden shadow-md">
+          <Image
+            src={Maize}
+            alt="Hybrid maize seed from Kings Seeds Ghana"
+            width={1080}
+            height={1080}
+            className="w-full h-full object-cover rounded-2xl"
+            priority
+          />
         </div>
+
+        {/* Text Card */}
+        <article
+          role="region"
+          aria-label="About Kings Seeds"
+          className="w-full md:w-[50%] relative md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/4 md:-translate-y-1/2 bg-[var(--deep-blue)] text-white rounded-2xl p-8 border-b-[10px] border-b-[var(--orange)] shadow-lg"
+        >
+          <header>
+            <h2
+              id="kings-seed-heading"
+              className="text-xl md:text-2xl font-semibold capitalize mb-4"
+            >
+              <span className="text-[var(--orange)] text-4xl block leading-tight">
+                Kings Seeds
+              </span>
+              provides the most quality seeds
+            </h2>
+          </header>
+
+          <p className="text-sm md:text-base text-justify mb-8">
+            Kings Seeds is the seed division of Big Stars Animal Feed,
+            delivering high-quality, certified hybrid maize and legume seeds
+            tailored for Ghanaian farmers. With a focus on yield, resilience,
+            and sustainability, Kings Seeds empowers agriculture with trusted
+            varieties like Supreme and Teemeer 02 Hybrid Maize.
+          </p>
+
+          <Link
+            href="/kingseeds"
+            className="inline-block bg-[var(--orange)] hover:bg-[var(--deep-orange)] text-white text-sm font-medium py-3 px-8 rounded-lg transition-colors duration-300 ease-in-out"
+          >
+            Know More
+          </Link>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };
 

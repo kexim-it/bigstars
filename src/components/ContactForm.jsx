@@ -25,30 +25,75 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="">
-  <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-[var(--color-min-blue)]">
-      <form  className="space-y-8"  ref={form} onSubmit={sendEmail}>
-          <div>
-              <label htmlFor="user_name" className="block mb-2 text-sm font-medium text-[var(--orange)] dark:text-gray-300">Your Name</label>
-              <input type="text" id="user_name" name='user_name' className="font-extralight text-white border-b border-[var(--blue)] w-full outline-none placeholder:text-sm placeholder:italic placeholder-opacity-10 placeholder:text-slate-300" placeholder="John Doe" required />
-          </div>
-          <div>
-              <label htmlFor="email" className="block mb-2 text-sm font-medium text-[var(--orange)] dark:text-gray-300">Your Email</label>
-              <input type="email" name='user_email' id="email" className="font-extralight text-white border-b border-[var(--blue)] w-full outline-none placeholder:text-sm placeholder:italic placeholder-opacity-10 placeholder:text-slate-300" placeholder="name@bigstars.ltd" required />
-          </div>
-          <div>
-              <label htmlFor="subject" className="block mb-2 text-sm font-medium text-[var(--orange)] dark:text-gray-300">Subject</label>
-              <input type="text" id="subject" name='subject' className="font-extralight text-white border-b border-[var(--blue)] w-full outline-none placeholder:text-sm placeholder:italic placeholder-opacity-10 placeholder:text-slate-300" placeholder="Subject" required />
-          </div>
-          <div className="sm:col-span-2">
-              <label htmlFor="message" className="block mb-2 text-sm font-medium text-[var(--orange)] dark:text-gray-400">Your message</label>
-              <textarea id="message" name='message' rows="6" className="block p-2.5 w-full text-sm text-white border-[var(--blue)] border outline-none placeholder:text-sm placeholder:italic placeholder-opacity-10 placeholder:text-slate-300" placeholder="Leave a comment..."></textarea> 
-          </div>
-          <button type="submit" className="py-3 px-5 text-sm cursor-pointer hover:font-medium text-center text-[var(--blue)] rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 border-[var(--blue)] border-2 focus:outline-none  ary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 hover:border-[var(--orange)] hover:text-[var(--orange)] duration-300 ease-in-out font-extralight">Send message</button>
-      </form>
+    <section className="bg-[var(--color-min-blue)] py-10 px-4">
+  <div className="mx-auto max-w-screen-md">
+    <form ref={form} onSubmit={sendEmail} className="space-y-8">
+      
+      <div>
+        <label htmlFor="user_name" className="block mb-2 text-sm font-medium text-[var(--orange)]">
+          Your Name
+        </label>
+        <input
+          type="text"
+          id="user_name"
+          name="user_name"
+          required
+          placeholder="John Doe"
+          className="w-full border-b border-[var(--blue)] bg-transparent text-white placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none py-2"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="email" className="block mb-2 text-sm font-medium text-[var(--orange)]">
+          Your Email
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="user_email"
+          required
+          placeholder="name@bigstars.ltd"
+          className="w-full border-b border-[var(--blue)] bg-transparent text-white placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none py-2"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="subject" className="block mb-2 text-sm font-medium text-[var(--orange)]">
+          Subject
+        </label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          required
+          placeholder="Subject"
+          className="w-full border-b border-[var(--blue)] bg-transparent text-white placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none py-2"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="message" className="block mb-2 text-sm font-medium text-[var(--orange)]">
+          Your message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          placeholder="Leave a comment..."
+          className="w-full border border-[var(--blue)] bg-transparent text-white placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none p-3"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        className="px-6 py-3 border-2 text-sm text-[var(--blue)] border-[var(--blue)] rounded-lg hover:text-[var(--orange)] hover:border-[var(--orange)] transition-all duration-300 ease-in-out font-light"
+      >
+        Send message
+      </button>
+    </form>
   </div>
 </section>
-
   )
 }
 

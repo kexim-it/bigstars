@@ -1,25 +1,29 @@
 import Image from "next/image";
 import React from "react";
 
-const TeamCard = ({img, name, position, company, description}) => {
+const TeamCard = ({ img, name, position, company, description }) => {
   return (
-    <div className="flex flex-col items-left justify-center mb-10 bg-slate-100">
-      <div className="w-80 h-80 overflow-hidden">
+    <article
+      className="flex flex-col items-start bg-slate-100 rounded-lg shadow-md overflow-hidden mb-10 max-w-xs"
+      aria-label={`${name}, ${position} at ${company}`}
+    >
+      <div className="w-full h-80 relative">
         <Image
           src={img}
-          alt="Dr. James Rajamani"
-          width={1080}
-          height={1080}
-          className="w-full h-full object-cover"
+          alt={`${name} - ${position} at ${company}`}
+          layout="fill"
+          objectFit="cover"
+          className="object-cover"
+          priority
         />
       </div>
-      <div className="px-2 py-4">
-        <h4 className="text-2xl font-semibold text-[var(--orange)]">{name}</h4>
-        <p className="text-[var(--blue)]">{position}</p>
-        <p className="text-sm text-slate-500 italic">{company}</p>
-        <p className="my-4 text-sm text-slate-600 max-w-72 text-justify">{description}</p>
+      <div className="px-4 py-5">
+        <h3 className="text-2xl font-semibold text-[var(--orange)]">{name}</h3>
+        <p className="text-[var(--blue)] font-medium">{position}</p>
+        <p className="text-sm text-slate-500 italic mb-3">{company}</p>
+        <p className="text-sm text-slate-600 text-justify">{description}</p>
       </div>
-    </div>
+    </article>
   );
 };
 

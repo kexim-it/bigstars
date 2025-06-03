@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Lato, Montserrat, Great_Vibes} from "next/font/googl
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollUp from "@/components/ScrollUp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,7 +50,9 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <ScrollUp />
         <Footer />
+        <script src="//code.tidio.co/pxep964yduadm2htcxvzg9dr73ttzysv.js" async></script>
       </body>
     </html>
   );

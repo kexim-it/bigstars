@@ -8,65 +8,77 @@ import Bernice from "@/app/assets/images/staff/bernice.png";
 
 const NavigationCard = () => {
   return (
-    <div className="w-[85vw] 2xl:w-[] mx-auto bg-slate-100 border-b-4 rounded-2xl shadow-sm border-b-[var(--orange)] h-96 py-5 px-10">
-      <h3 className="text-2xl font-semibold text-[var(--blue)]">Navigations</h3>
-      <div className=" flex items-end justify-between gap-5">
-        <div className="flex items-center">
-          <div className="grid grid-cols-2 gap-x-10 space-y-5">
+    <section
+      className="w-[80vw] mx-auto bg-slate-100 border-b-4 rounded-2xl shadow-sm border-b-[var(--orange)] py-8 px-6 md:px-10 space-y-8"
+      aria-label="Navigation Section"
+    >
+      <h3 className="text-2xl md:text-3xl font-semibold text-[var(--blue)]">Navigations</h3>
+
+      <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
+        {/* Left: Links + Image */}
+        <div className="flex flex-col md:flex-row items-start gap-6 w-full lg:w-2/3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4">
             {QuickLinks.map((quick, key) => (
               <Link
                 key={key}
                 href={quick.title}
-                className="text-xl flex items-center gap-5 group"
+                className="text-base md:text-lg flex items-center gap-3 group"
               >
                 <span className="text-[var(--blue)] hover:text-[var(--orange)] duration-300 ease-in-out">
                   {quick.title}
                 </span>
-                <FaArrowRightLong className="group-hover:translate-x-5 duration-1000 ease-in-out group-hover:block group-hover:text-[var(--orange)] translate-x-0 opacity-0 group-hover:opacity-100" />
+                <FaArrowRightLong className="group-hover:translate-x-2 duration-500 ease-in-out opacity-0 group-hover:opacity-100 text-[var(--orange)]" />
               </Link>
             ))}
           </div>
-          <div className="w-52 h-70 rounded-2xl">
+          <div className="w-full md:w-48 h-40 rounded-2xl overflow-hidden">
             <Image
               src={PoultryFeeding}
-              alt="Navigation-image"
+              alt="Poultry feeding image representing feed options"
               width={1080}
               height={1080}
-              className="object-cover h-full w-full rounded-2xl"
+              className="object-cover h-full w-full"
             />
           </div>
         </div>
-        <div className="">
-          <div className="w-96 h-44 overflow-hidden rounded-xl">
-            <Image alt="" src={PoultryFeeding} className="object-cover" />
+
+        {/* Right: Contact Person */}
+        <div className="w-full lg:w-1/3 space-y-4">
+          <div className="w-full h-40 rounded-xl overflow-hidden">
+            <Image
+              alt="Supplementary poultry feed visual"
+              src={PoultryFeeding}
+              className="object-cover w-full h-full"
+              width={1080}
+              height={1080}
+            />
           </div>
+
           <Link
-            href={"mailto:sales@bigstars.ltd"}
-            className="flex items-end gap-6"
+            href="mailto:sales@bigstars.ltd"
+            className="flex items-center gap-4"
           >
             <Image
               src={Bernice}
-              width={1080}
-              height={1080}
-              className="w-20 h-24 object-cover"
-              alt="Big Stars Animal Feed Sales Manager"
+              width={80}
+              height={96}
+              className="w-16 h-20 rounded-lg object-cover"
+              alt="Bernice - Sales Manager at Big Stars Animal Feed"
             />
-            <div className="">
-              <div className="w-72">
-                <h4 className="text-lg font-semibold italic text-[var(--blue)]">
-                  Bernice - Sales Manager
-                </h4>
-                <p className="text-slate-600 text-sm">
-                  Contact our sales manager via email for your offers. We are
-                  always happy to get in touch with our customers
-                </p>
-              </div>
+            <div className="space-y-1">
+              <h4 className="text-base md:text-lg font-semibold italic text-[var(--blue)]">
+                Bernice - Sales Manager
+              </h4>
+              <p className="text-sm text-slate-600">
+                Email our sales manager for orders and queries. We’re here to serve you.
+              </p>
             </div>
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default NavigationCard;
+// This component renders a navigation section with quick links and a contact person.

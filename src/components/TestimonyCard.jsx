@@ -4,34 +4,39 @@ import Dummy from "@/app/assets/images/ai/dummy-farmer.jpeg";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
-const TestimonyCard = ({url,img, desc,ctaText, name, location}) => {
+const TestimonyCard = ({ url, img = Dummy, desc, ctaText, name, location }) => {
   return (
     <Link
       href={url}
-      className="w-96  group flex flex-col items-start justify-center"
+      aria-label={`Testimonial by ${name} from ${location}`}
+      className="w-full max-w-md group flex flex-col items-start justify-center"
     >
-      <div className="w-96 h-96 relative">
-        <div className="overflow-hidden w-96 h-96 rounded-t-lg">
+      <div className="relative w-full aspect-square">
+        <div className="overflow-hidden w-full h-full rounded-t-lg">
           <Image
             src={img}
-            height={1080}
-            width={1080}
-            alt="Testimonial Image"
-            className="w-full h-full transform transition-transform object-cover scale-110 group-hover:scale-100 duration-300 ease-in-out"
+            alt={`Photo of ${name}`}
+            fill
+            className="object-cover transform transition-transform scale-110 group-hover:scale-100 duration-300 ease-in-out"
+            sizes="(max-width: 768px) 100vw, 33vw"
+            priority
           />
         </div>
-        <div className="absolute bottom-4 left-0 w-96 h-32 bg-black/70 px-10">
-          <p className="text-white line-clamp-3 my-4 text-sm">
-            {desc}
+        <div className="absolute bottom-0 left-0 w-full bg-black/70 px-6 py-4">
+          <p className="text-white line-clamp-3 text-sm mb-2">{desc}</p>
+          <p className="text-sm text-white font-medium">
+            {name} – {location}
           </p>
-          <p className="text-sm text-white">{name} - {location}</p>
         </div>
       </div>
-      <div className="bg-white group-hover:bg-[var(--orange)] border border-slate-100 h-20 w-96 flex items-center gap-5 px-5">
-        <div className=" border-slate-200 group-hover:border-white border w-8 h-8 text-center rounded-full group-hover:translate-x-4 duration-300 ease-in-out">
-          <FaArrowRight className="text-[var(--orange)] group-hover:text-white text-sm mx-auto mt-2 text-center" />
+
+      <div className="bg-white group-hover:bg-[var(--orange)] border border-slate-100 h-16 w-full flex items-center gap-4 px-5 transition-colors duration-300 ease-in-out">
+        <div className="border border-slate-200 group-hover:border-white w-8 h-8 rounded-full flex items-center justify-center transform group-hover:translate-x-2 transition-transform duration-300">
+          <FaArrowRight className="text-[var(--orange)] group-hover:text-white text-sm" />
         </div>
-          <span className="capitalize text-[var(--blue)] group-hover:text-white duration-300 ease-in-out">{ctaText}</span>
+        <span className="capitalize text-[var(--blue)] group-hover:text-white transition-colors duration-300">
+          {ctaText}
+        </span>
       </div>
     </Link>
   );

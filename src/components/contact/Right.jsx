@@ -1,19 +1,23 @@
 import Image from 'next/image'
 import React from 'react'
-// import Arrow from "@/assets/img/arrow.png"
 import ContactForm from '../ContactForm'
 
 const Right = () => {
   return (
-    <div className='lg:shadow-lg lg:w-[50vw] w-full min-h-screen'>
-        <div className="flex items-center justify-between px-5 lg:mt-52 my-16">
-            <span className="bg-slate-500 h-[1px] w-[80px] lg:w-[250px]"></span>
-            <p className="w-sm text-slate-500 text-xl lg:text-lg mx-2">We are excited to hear from you and do business with you</p>
+    <section className="w-full lg:w-[50vw] min-h-screen lg:shadow-lg bg-white">
+      <div className="px-4 sm:px-8 lg:px-10 py-10 lg:py-24">
+        <div className="flex flex-col lg:flex-row items-center justify-between mb-10">
+          <span className="bg-slate-500 h-[1px] w-full lg:w-[250px] mb-4 lg:mb-0 lg:mr-4" />
+          <p className="text-center lg:text-left text-slate-500 text-lg max-w-md">
+            We are excited to hear from you and do business with you
+          </p>
         </div>
-        <div className="">
-            <ContactForm />
+
+        <div>
+          <ContactForm />
         </div>
-    </div>
+      </div>
+    </section>
   )
 }
 
