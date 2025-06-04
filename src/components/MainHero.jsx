@@ -1,12 +1,11 @@
 import Link from "next/link";
 import React from "react";
-import BigStarsVideo from "./BigStarsVideo";
 import Image from "next/image";
 import FeedFactory from "@/app/assets/images/ai/feed-factory.png";
 
 const MainHero = () => {
   return (
-    <div className=" relative group h-[90vh] w-screen">
+    <div className=" relative group h-[80vh] w-screen">
       <Image
         alt="Feed Factory"
         src={FeedFactory}

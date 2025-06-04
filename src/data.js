@@ -1,4 +1,4 @@
-import { FaBalanceScale, FaBox, FaDrumstickBite, FaEgg, FaFeather, FaHeartbeat, FaLayerGroup, FaLeaf, FaPiggyBank, FaSeedling, FaWarehouse } from "react-icons/fa";
+import { FaBalanceScale, FaBlender, FaBox, FaDrumstickBite, FaEgg, FaFeather, FaHeartbeat, FaLayerGroup, FaLeaf, FaMoneyBillWave, FaPiggyBank, FaSeedling, FaShieldAlt, FaWarehouse } from "react-icons/fa";
 import { GiBigEgg, GiBirdTwitter, GiBroccoli, GiChicken, GiChickenLeg, GiChickenOven, GiCorn, GiEggClutch, GiMeal, GiMeat, GiMuscleUp, GiPig, GiPigFace, GiRoastChicken, GiSteak, GiWeightLiftingUp, GiWheat } from "react-icons/gi";
 import DummyImage0 from "@/app/assets/images/ai/dummy-farmer.jpeg"
 import DummyImage2 from "@/app/assets/images/ai/dummy-farmer-2.png"
@@ -23,6 +23,7 @@ import SwineImage3 from "@/app/assets/images/swine/pig-3.jpg"
 import SwineImage4 from "@/app/assets/images/swine/pig-4.avif"
 import SwineImage5 from "@/app/assets/images/swine/pig-4.jpg"
 import SwineImage6 from "@/app/assets/images/swine/pig-5.avif"
+import { FaDumbbell } from "react-icons/fa6";
 
 
 export const MainServiceData = [
@@ -630,3 +631,178 @@ export const swineFeedData = {
   "distribution": "Available in all 16 regions of Ghana through sales depots and agents.",
   "source": "https://www.bigstars.ltd"
 }
+
+// concentratesData
+export const concentratesData = {
+  "title": "Big Stars Feed Concentrates: Smarter Nutrition, Better Yield",
+  "short_description": "Big Stars Animal Feed Concentrates are nutrient-rich premixes designed to deliver cost-effective, high-performance nutrition for poultry and pigs.",
+  "long_description": "Big Stars Animal Feed Concentrates are expertly formulated premixed supplements designed to be combined with local energy sources like maize, wheat bran, or rice bran to produce complete feed. Our concentrates offer farmers a cost-effective way to create high-quality, balanced rations while maintaining control over raw materials.",
+  "features": [
+    {
+      "title": "High Nutrient Density",
+      "description": "Packed with essential proteins, amino acids, vitamins, and minerals needed for optimal animal growth, productivity, and immunity.",
+      "icon": <FaDumbbell />
+    },
+    {
+      "title": "Species-Specific Blends",
+      "description": "Available in formulations tailored for layers, broilers, growers, ducks, turkeys, and pigs, ensuring animals get the right nutrition at each stage.",
+      "icon": <FaLayerGroup />
+    },
+    {
+      "title": "Easy Mixing",
+      "description": "Designed for straightforward on-farm mixing with simple instructions, making it accessible for both commercial and smallholder farmers.",
+      "icon": <FaBlender />
+    },
+    {
+      "title": "Quality Assurance",
+      "description": "Every batch is produced under strict quality control to guarantee consistency, safety, and performance.",
+      "icon": <FaShieldAlt />
+    },
+    {
+      "title": "Economical Feeding",
+      "description": "Concentrates allow farmers to reduce feed costs without compromising performance by utilizing affordable local ingredients.",
+      "icon": <FaMoneyBillWave />
+    }
+  ],
+  "popular_products": [
+    "Egg Layer Concentrate",
+    "Broiler Starter Concentrate",
+    "Broiler Grower Concentrate",
+    "Broiler Finisher Concentrate",
+    "Grower Concentrate",
+    "Duck & Turkey Concentrates",
+    "Pig Breeder Concentrate",
+    "Pig Weaner Concentrate"
+  ],
+  "conclusion": "Whether you're raising poultry or pigs, Big Stars' concentrate solutions are trusted across Ghana for their reliability, effectiveness, and value."
+}
+
+// Mash Data
+export const mashData = [
+  {
+    "name": "Chick Pre-Starter Mash",
+    "age_range": "1-7 days",
+    "description": "Formulated for newly hatched chicks to boost early immunity and promote rapid growth during the critical first week of life."
+  },
+  {
+    "name": "Chick Mash",
+    "age_range": "2-8 weeks",
+    "description": "Balanced feed designed to support healthy bone and feather development in growing chicks."
+  },
+  {
+    "name": "Grower Mash",
+    "age_range": "9-18 weeks",
+    "description": "Ideal for pullets during their development phase, encouraging steady growth and preparing them for laying."
+  },
+  {
+    "name": "Layer Plus",
+    "age_range": "19-29 weeks",
+    "description": "Nutrient-rich feed that supports peak onset of egg production with optimal calcium and protein content."
+  },
+  {
+    "name": "Layer Mash 1",
+    "age_range": "30-50 weeks",
+    "description": "Formulated to maintain high egg productivity and shell quality during the prime laying period."
+  },
+  {
+    "name": "Layer Mash 2",
+    "age_range": "50 weeks and above",
+    "description": "Supports consistent egg production and hen health in the late laying stage with added minerals and vitamins."
+  },
+  {
+    "name": "Broiler Starter Mash",
+    "age_range": "0-3 weeks",
+    "description": "High-energy, protein-packed feed designed for fast-growing broilers during the starter phase."
+  },
+  {
+    "name": "Broiler Finisher Mash",
+    "age_range": "4-8 weeks",
+    "description": "Optimized to promote rapid weight gain and meat quality in broilers nearing market age."
+  },
+  {
+    "name": "Guinea Fowl Starter",
+    "age_range": "0-4 weeks",
+    "description": "Tailored to meet the nutritional needs of young keets for strong early growth and immunity."
+  },
+  {
+    "name": "Guinea Fowl Finisher",
+    "age_range": "5 weeks and above",
+    "description": "Formulated to support meat development and energy requirements in maturing guinea fowl."
+  },
+  {
+    "name": "Pig Weaner / Lactating Sow",
+    "age_range": "Post-weaning / Lactation period",
+    "description": "Specially designed for young piglets and lactating sows to support milk production and post-weaning transition."
+  },
+  {
+    "name": "Pig Finisher",
+    "age_range": "Finishing phase",
+    "description": "Energy-dense formula to promote rapid weight gain and fattening in pigs ready for market."
+  },
+  {
+    "name": "Pig Breeder",
+    "age_range": "Breeding age",
+    "description": "Optimized for boars and sows to maintain fertility, reproductive health, and overall vitality."
+  },
+  {
+    "name": "Rabbit Feed",
+    "age_range": "All stages",
+    "description": "Balanced diet for rabbits of all ages, supporting digestion, fur quality, and overall wellbeing."
+  }
+]
+
+
+// ConcentratesPercentData
+export const concentratesPercentData = [
+  {
+    "name": "Chick Concentrate",
+    "percentile": "50%",
+    "description": "Feed concentrate suitable for young chicks."
+  },
+  {
+    "name": "Grower Concentrate",
+    "percentile": "50%",
+    "description": "Balanced feed for growing poultry."
+  },
+  {
+    "name": "Layer Concentrate",
+    "percentile": "5%",
+    "description": "Feed concentrate for laying hens at 5% inclusion."
+  },
+  {
+    "name": "Layer Concentrate",
+    "percentile": "20%",
+    "description": "Feed concentrate for laying hens at 20% inclusion."
+  },
+  {
+    "name": "Layer Concentrate",
+    "percentile": "25%",
+    "description": "Feed concentrate for laying hens at 25% inclusion."
+  },
+  {
+    "name": "Layer Concentrate",
+    "percentile": "50%",
+    "description": "Feed concentrate for laying hens at 50% inclusion."
+  },
+  {
+    "name": "Broiler Concentrate",
+    "percentile": "5%",
+    "description": "Feed concentrate for broilers at 5% inclusion."
+  },
+  {
+    "name": "Broiler Concentrate",
+    "percentile": "30%",
+    "description": "Feed concentrate for broilers at 30% inclusion."
+  },
+  {
+    "name": "Broiler Concentrate",
+    "percentile": "35%",
+    "description": "Feed concentrate for broilers at 35% inclusion."
+  },
+  {
+    "name": "Broiler Concentrate",
+    "percentile": "50%",
+    "description": "Feed concentrate for broilers at 50% inclusion."
+  }
+]
+
