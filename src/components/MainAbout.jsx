@@ -9,25 +9,25 @@ const tabContent = {
     title: "Company profile",
     body: "Big Stars Animal Feed Ltd is a trusted name in high-quality animal nutrition solutions, dedicated to supporting farmers with scientifically formulated feeds for poultry, livestock, and aquaculture. With a focus on innovation, quality, and sustainability, we help drive productivity and growth across the agricultural sector.",
     linkText: "Get To know More",
-    url: "/about/company-profile",
+    url: "/about-us/company-profile",
   },
   "Our Vision": {
     title: "Our Vision",
     body: "To be a leading provider of innovative and sustainable animal nutrition solutions that empower farmers, enhance livestock health, and contribute to food security across Africa.",
     linkText: "Get To know More",
-    url: "/about/our-mission-and-vision",
+    url: "about-us/vision-and-mission",
   },
   "Our Story": {
     title: "Our Story",
     body: "Big Stars Animal Feed Ltd was born from a passion to support farmers with reliable, high-quality animal nutrition. What started as a small venture has grown into a trusted brand known for consistency, innovation, and care. Guided by a deep understanding of local farming needs, we produce scientifically balanced feeds that boost animal health and farm productivity. Every bag we produce reflects our commitment to excellence, sustainability, and the success of the agricultural communities we serve.",
     linkText: "Get To know More",
-    url: "/about/our-story",
+    url: "/about-us/vision-and-mission",
   },
   "Our Mission": {
     title: "Our Mission",
     body: "To produce high-quality, nutritionally balanced animal feeds that support the health, growth, and productivity of livestock, while empowering farmers with reliable solutions, expert support, and a commitment to sustainable agriculture.",
     linkText: "Get To know More",
-    url: "/about/our-mission-and-vision",
+    url: "/about-us/vision-and-mission",
   },
 };
 

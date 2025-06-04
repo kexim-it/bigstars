@@ -38,6 +38,12 @@ import ChickImage8 from "@/app/assets/images/poultry/hen-3.jpg"
 import ChickImage9 from "@/app/assets/images/poultry/hen-1.webp"
 import ChickImage10 from "@/app/assets/images/poultry/chick-9.jpg"
 
+// Welfare Commit Image
+import WelfareImage1 from "@/app/assets/images/poultry/poultry.png"
+import WelfareImage2 from "@/app/assets/images/poultry/large-poultry-farm.jpeg"
+import WelfareImage3 from "@/app/assets/images/poultry/chick-5.jpg"
+import WelfareImage4 from "@/app/assets/images/poultry/poultry-2.jpg"
+
 export const MainServiceData = [
   // {
   //   "title": "Our Feed Recipients",
@@ -61,7 +67,7 @@ export const MainServiceData = [
     "title": "Feed Types",
     "description": "Explore our diverse range of feed products, each tailored to meet the nutritional demands of different animals and farming goals.",
     "icon": <FaLayerGroup className='text-4xl text-[var(--blue)] my-4 group-hover:text-[var(--orange)] duration-300 ease-in-out' />,
-    "link": "/feed-types"
+    "link": "/animal-nutrition/concentrates"
   },
   {
     "title": "Animal Welfare",
@@ -81,31 +87,31 @@ export const MainServiceData = [
 export const QuickLinks = [
   {
     "title": "Where to Find Us",
-    "link": "/where-to-find-us"
+    "link": "/contact-us"
   },
   {
     "title": "Our Story",
-    "link": "/our-story"
+    "link": "/about-us/vision-and-mission"
   },
   {
     "title": "Our Team",
-    "link": "/our-team"
+    "link": "/about-us/team-members"
   },
   {
     "title": "Vision & Mission",
-    "link": "/vision-and-mission"
+    "link": "/about-us/vision-and-mission"
   },
   {
-    "title": "Ethical Feed Production",
-    "link": "/ethical-feed-production"
+    "title": "Animal Welfare",
+    "link": "/animal-welfare"
   },
   {
-    "title": "Feed Safety Standards",
-    "link": "/feed-safety-standards"
+    "title": "Concentrates",
+    "link": "/animal-nutrition/concentrates"
   },
   {
     "title": "Get in Touch",
-    "link": "/get-in-touch"
+    "link": "/contact-us"
   }
 ]
 
@@ -870,5 +876,37 @@ export const concentrateImageData =  [
     id: 10,
     src: ChickImage10,
     alt: "Group of active chicks walking on hay bedding"
+  }
+]
+
+// Welfare Commit Data
+export const welfareCommitData = [
+  {
+    "title": "Balanced Nutrition",
+    "description": "Our specially designed feeds provide animals with the essential nutrients needed to prevent hunger and maintain optimal health.",
+    "image": WelfareImage1,
+    "imageAlt": "Balanced animal feed ingredients in a bowl",
+    "flexDirection": "md:flex-row"
+  },
+  {
+    "title": "Healthy Growth",
+    "description": "By supporting immune systems and overall well-being, our feeds help reduce disease and discomfort.",
+    "image": WelfareImage2,
+    "imageAlt": "Healthy livestock growing on a farm",
+    "flexDirection": "md:flex-row-reverse"
+  },
+  {
+    "title": "Promoting Natural Behavior",
+    "description": "We encourage farmers to adopt practices that allow animals to express natural behaviors, supported by our feed formulations tailored for different species and growth stages.",
+    "image": WelfareImage3,
+    "imageAlt": "Free-range chickens expressing natural behavior",
+    "flexDirection": "md:flex-row"
+  },
+  {
+    "title": "Stress Reduction",
+    "description": "Quality feed is a key factor in reducing stress and improving animal resilience, especially during critical phases such as growth, laying, or finishing.",
+    "image": WelfareImage4,
+    "imageAlt": "Calm livestock in a stress-free environment",
+    "flexDirection": "md:flex-row-reverse"
   }
 ]
