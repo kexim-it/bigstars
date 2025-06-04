@@ -26,6 +26,18 @@ import SwineImage6 from "@/app/assets/images/swine/pig-5.avif"
 import { FaDumbbell } from "react-icons/fa6";
 
 
+// Chick Image
+import ChickImage1 from "@/app/assets/images/poultry/chick-1.webp"
+import ChickImage2 from "@/app/assets/images/poultry/chick-2.webp"
+import ChickImage3 from "@/app/assets/images/poultry/chick-3.jpg"
+import ChickImage4 from "@/app/assets/images/poultry/chick-5.jpg"
+import ChickImage5 from "@/app/assets/images/poultry/chick-7.jpg"
+import ChickImage6 from "@/app/assets/images/poultry/hen-2.jpg"
+import ChickImage7 from "@/app/assets/images/poultry/hen-2.webp"
+import ChickImage8 from "@/app/assets/images/poultry/hen-3.jpg"
+import ChickImage9 from "@/app/assets/images/poultry/hen-1.webp"
+import ChickImage10 from "@/app/assets/images/poultry/chick-9.jpg"
+
 export const MainServiceData = [
   // {
   //   "title": "Our Feed Recipients",
@@ -806,3 +818,57 @@ export const concentratesPercentData = [
   }
 ]
 
+// ConcentetrateImageData
+
+export const concentrateImageData =  [
+  {
+    id: 1,
+    src: ChickImage1,
+    alt: "Close-up of a healthy yellow chick on poultry bedding"
+  },
+  {
+    id: 2,
+    src: ChickImage2,
+    alt: "Group of baby chicks feeding under a brooder"
+  },
+  {
+    id: 3,
+    src: ChickImage3,
+    alt: "Dozens of yellow chicks gathered on wood shavings"
+  },
+  {
+    id: 4,
+    src: ChickImage4,
+    alt: "Poultry chicks feeding inside a clean brooding space"
+  },
+  {
+    id: 5,
+    src: ChickImage5,
+    alt: "Healthy chicks roaming freely in a poultry enclosure"
+  },
+  {
+    id: 6,
+    src: ChickImage6,
+    alt: "Adult hen standing alert in a clean poultry area"
+  },
+  {
+    id: 7,
+    src: ChickImage7,
+    alt: "Brown hen in a farm environment looking healthy"
+  },
+  {
+    id: 8,
+    src: ChickImage8,
+    alt: "Hen inside a poultry house feeding from a trough"
+  },
+  {
+    id: 9,
+    src: ChickImage9,
+    alt: "Healthy hen in a free-range poultry setting"
+  },
+  {
+    id: 10,
+    src: ChickImage10,
+    alt: "Group of active chicks walking on hay bedding"
+  }
+]

@@ -8,27 +8,27 @@ const ConcentratePercent = () => {
         Poultry Feed Concentrates
       </h2>
       <div className="overflow-x-auto">
-        <table className="min-w-full border border-gray-300 divide-y divide-gray-200">
+        <table className="min-w-full border border-[var(--deep-blue)] divide-y divide-[var(--deep-blue)]">
           <caption className="sr-only">
             Table showing different poultry feed concentrates, their percentile inclusion, and descriptions.
           </caption>
-          <thead className="bg-gray-100">
+          <thead className="bg-[var(--blue)] text-white">
             <tr>
               <th
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border border-gray-300"
+                className="px-6 py-3 text-left text-xs font-medium  uppercase tracking-wider border border-gray-300"
               >
                 Name
               </th>
               <th
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border border-gray-300"
+                className="px-6 py-3 text-left text-xs font-medium  uppercase tracking-wider border border-gray-300"
               >
                 Percentile
               </th>
               <th
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border border-gray-300"
+                className="px-6 py-3 text-left text-xs font-medium  uppercase tracking-wider border border-gray-300"
               >
                 Description
               </th>
