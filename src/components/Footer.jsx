@@ -8,7 +8,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="bg-[var(--blue)] border-t-8 border-t-[var(--orange)] text-white py-10 px-6 w-full">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-10">
+      {/* <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-10">
         {footerLinks.map((section, index) => (
           <div key={index}>
             <h3 className="font-bold mb-4 uppercase text-white">{section.title}</h3>
@@ -27,7 +27,7 @@ const Footer = () => {
             </ul>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Social Media Section */}
       <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto gap-6 md:gap-0 px-6">
@@ -75,8 +75,8 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="max-w-7xl border-t pt-6 border-white mx-auto mt-8 px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-          <Link href="/privacy-policy" className="hover:text-white transition duration-300">Privacy Policy</Link>
-          <Link href="/disclaimer" className="hover:text-white transition duration-300">Disclaimer</Link>
+          {/* <Link href="/privacy-policy" className="hover:text-white transition duration-300">Privacy Policy</Link>
+          <Link href="/disclaimer" className="hover:text-white transition duration-300">Disclaimer</Link> */}
         </div>
         <p className="text-center">© {new Date().getFullYear()} Big Stars Animal Feed. All rights reserved.</p>
       </div>

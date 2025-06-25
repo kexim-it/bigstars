@@ -44,6 +44,13 @@ import WelfareImage2 from "@/app/assets/images/poultry/large-poultry-farm.jpeg"
 import WelfareImage3 from "@/app/assets/images/poultry/chick-5.jpg"
 import WelfareImage4 from "@/app/assets/images/poultry/poultry-2.jpg"
 
+// Slide Image
+import SlideData1 from "@/app/assets/images/factory/feed-check-4.jpg"
+import SlideData2 from "@/app/assets/images/factory/feed-checking-1.jpg"
+import SlideData3 from "@/app/assets/images/factory/feed-bagging-1.jpg"
+import SlideData4 from "@/app/assets/images/factory/feed-at-lab-5.jpg"
+import SlideData5 from "@/app/assets/images/factory/feed-at-lab-3.jpg"
+
 export const MainServiceData = [
   // {
   //   "title": "Our Feed Recipients",
@@ -909,4 +916,24 @@ export const welfareCommitData = [
     "imageAlt": "Calm livestock in a stress-free environment",
     "flexDirection": "md:flex-row-reverse"
   }
+]
+
+
+// Slide Data 
+export const slideData = [
+  {
+    img: SlideData1
+  },
+  {
+    img: SlideData2
+  },
+  {
+    img: SlideData3
+  },
+  {
+    img: SlideData4
+  },
+  {
+    img: SlideData5
+  },
 ]

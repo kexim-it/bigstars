@@ -20,32 +20,38 @@ const Left = () => {
           {/* Phone Numbers */}
           <address className="not-italic space-y-1">
             <h4 className="text-sm font-semibold text-[var(--blue)]">Phone</h4>
-            <Link href="tel:23355008888" className="block text-sm lg:text-lg text-slate-500 hover:text-[var(--orange)] transition">
-              +233 55 00 8888
+            <Link href="tel:233540109000" className="block text-sm lg:text-lg text-slate-500 hover:text-[var(--orange)] transition">
+              +233 54 010 9000
             </Link>
-            <Link href="tel:23355009999" className="block text-sm lg:text-lg text-slate-500 hover:text-[var(--orange)] transition">
-              +233 55 00 9999
+            <Link href="tel:233540109001" className="block text-sm lg:text-lg text-slate-500 hover:text-[var(--orange)] transition">
+              +233 54 010 9001
             </Link>
-            <Link href="tel:233550053333" className="block text-sm lg:text-lg text-slate-500 hover:text-[var(--orange)] transition">
-              +233 55 005 3333
+            <Link href="tel:233540109002" className="block text-sm lg:text-lg text-slate-500 hover:text-[var(--orange)] transition">
+              +233 54 010 9002
             </Link>
           </address>
 
           {/* Address */}
           <div>
             <h4 className="text-sm font-semibold text-[var(--blue)]">Post Office Address</h4>
-            <p className="text-sm lg:text-lg text-slate-500">P.O. Box 032244</p>
-            <p className="text-sm lg:text-lg text-slate-500">Opposite Shoprite Osu, Accra, Ghana</p>
+            <p className="text-sm lg:text-lg text-slate-500">P.O. Box CS 9379</p>
+            <p className="text-sm lg:text-lg text-slate-500">Community 7, Tema Ghana</p>
           </div>
 
           {/* Email */}
-          <div>
+          <div className='flex flex-col items-start'>
             <h4 className="text-sm font-semibold text-[var(--blue)]">Email Address</h4>
             <Link
-              href="mailto:sales@bigstars.ltd"
+              href="mailto:marketing@bigstars.ltd"
               className="text-sm lg:text-lg text-slate-500 hover:text-[var(--orange)] transition"
             >
-              sales@bigstars.ltd
+              marketing@bigstars.ltd
+            </Link>
+            <Link
+              href="mailto:reception@bigstars.ltd"
+              className="text-sm lg:text-lg text-slate-500 hover:text-[var(--orange)] transition"
+            >
+              reception@bigstars.ltd
             </Link>
           </div>
 

@@ -1,20 +1,13 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import FeedFactory from "@/app/assets/images/ai/feed-factory.png";
+import FeedFactory from "@/app/assets/images/factory/feed-check-4.jpg";
+import ImageSlide from "./ImageSlide";
 
 const MainHero = () => {
   return (
-    <div className=" relative group h-[80vh] w-screen">
-      <Image
-        alt="Feed Factory"
-        src={FeedFactory}
-        priority
-        width={1080}
-        height={1080}
-        className="w-full h-full object-cover"
-      />
-
+    <div className=" relative group h-screen w-screen">
+        <ImageSlide />
       <div className="absolute lg:top-[28rem] lg:left-60 z-20 space-x-5  top-[60%] left-1/2 -translate-x-1/2 ">
         <div className="flex items-center gap-4 md:gap-6 text-center md:text-left">
           <Link

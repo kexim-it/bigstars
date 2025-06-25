@@ -11,17 +11,26 @@ const ContactForm = () => {
   emailjs.init(publicKey);
 
   const router = useRouter()
-
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm(serviceId, templateId, form.current)
-    .then((response) => {
-      alert('Email sent successfully!', response);
-      router.push("/")
-    })
-    .catch((error) => {
-      console.error('Failed to send email:', error);
-    });
+
+    emailjs
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
+      })
+      .then(
+        (response) => {
+          console.log('SUCCESS!');
+          console.log(response)
+          alert("Thank you for your message! We'll get back to you soon.");
+          form.current.reset();
+          router.push('/'); // Redirect to home page after successful submission
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          alert ("Whoops! Something went wrong. Please try again later.");
+        },
+      );
   };
 
   return (
@@ -39,7 +48,7 @@ const ContactForm = () => {
           name="user_name"
           required
           placeholder="John Doe"
-          className="w-full border-b border-[var(--blue)] bg-transparent text-white placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none py-2"
+          className="w-full border-b border-[var(--blue)] bg-transparent text-slate-600 placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none py-2"
         />
       </div>
 
@@ -53,7 +62,7 @@ const ContactForm = () => {
           name="user_email"
           required
           placeholder="name@bigstars.ltd"
-          className="w-full border-b border-[var(--blue)] bg-transparent text-white placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none py-2"
+          className="w-full border-b border-[var(--blue)] bg-transparent text-slate-600 placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none py-2"
         />
       </div>
 
@@ -67,7 +76,7 @@ const ContactForm = () => {
           name="subject"
           required
           placeholder="Subject"
-          className="w-full border-b border-[var(--blue)] bg-transparent text-white placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none py-2"
+          className="w-full border-b border-[var(--blue)] bg-transparent text-slate-600 placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none py-2"
         />
       </div>
 
@@ -81,13 +90,13 @@ const ContactForm = () => {
           rows="6"
           required
           placeholder="Leave a comment..."
-          className="w-full border border-[var(--blue)] bg-transparent text-white placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none p-3"
+          className="w-full border border-[var(--blue)] bg-transparent text-slate-600 placeholder:text-slate-300 placeholder:italic placeholder:text-sm outline-none p-3"
         ></textarea>
       </div>
 
       <button
         type="submit"
-        className="px-6 py-3 border-2 text-sm text-[var(--blue)] border-[var(--blue)] rounded-lg hover:text-[var(--orange)] hover:border-[var(--orange)] transition-all duration-300 ease-in-out font-light"
+        className="px-6 py-3 border-2 text-sm text-[var(--blue)] border-[var(--blue)] rounded-lg hover:text-[var(--orange)] hover:border-[var(--orange)] transition-all duration-300 ease-in-out font-light cursor-pointer"
       >
         Send message
       </button>
