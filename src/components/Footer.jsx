@@ -34,7 +34,7 @@ const Footer = () => {
         <h4 className="text-xl font-bold text-[var(--orange)] tracking-widest">Follow Us</h4>
         <div className="flex items-center gap-6">
           <Link
-            href="https://facebook.com"
+            href="https://www.facebook.com/bigstarsfeed"
             aria-label="Facebook"
             target="_blank"
             rel="noopener noreferrer"
@@ -42,7 +42,7 @@ const Footer = () => {
           >
             <RiFacebookCircleLine />
           </Link>
-          <Link
+          {/* <Link
             href="https://instagram.com"
             aria-label="Instagram"
             target="_blank"
@@ -68,7 +68,7 @@ const Footer = () => {
             className="text-2xl hover:text-[var(--orange)] transition duration-300"
           >
             <CiLinkedin />
-          </Link>
+          </Link> */}
         </div>
       </div>
 
