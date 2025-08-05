@@ -18,7 +18,7 @@ const page = () => {
         <WelfareMatters />
         <CTA />
         <MainAbout />
-        <Testimonials />
+        {/* <Testimonials /> */}
     </div>
   )
 }

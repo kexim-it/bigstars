@@ -17,7 +17,7 @@ const page = () => {
       <SecondSection />
       <MainAbout/>
       <Purpose />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <CTA />
     </div>
   )

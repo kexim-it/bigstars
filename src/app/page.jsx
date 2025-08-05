@@ -17,7 +17,7 @@ export default function Home() {
       <VideoCard />
       <MainAbout/>
       <KingsSeedMain />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </div>
   );
 }

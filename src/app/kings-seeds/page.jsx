@@ -14,7 +14,7 @@ const page = () => {
         
       <MainAbout/>
       <KingsSeedMain />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </div>
   )
 }
